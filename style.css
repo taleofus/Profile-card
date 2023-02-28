@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+body {
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a1ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* z-index: 10; */
+}
+.circle-top {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* left: -50%; */
+  /* top: -40%; */
+  z-index: 5;
+}
+.circle-bottom {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -80%;
+  right: -10%;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  transform: rotate(45deg);
+}
+.main-card {
+  width: 35rem;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 15px;
+  background-color: #fff;
+  z-index: 6;
+}
+.images-container {
+  position: relative;
+  width: 35rem;
+}
+.background-img {
+  /* width: 100%; */
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 500px;
+  border: 5px solid #ffffff;
+}
+.person-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7.2rem 0 2.8rem 0;
+  gap: 1.3rem;
+}
+.name-age {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #2e3349;
+}
+.name-age span {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #6b7082;
+}
+.location {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #6b7082;
+}
+.interaction-numbers {
+  display: flex;
+  border-top: 1px solid #e8e9ec;
+  justify-content: space-evenly;
+  padding: 2.5rem 0 2.7rem 0;
+}
+.number-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.number {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #2e3349;
+}
+.title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+}
